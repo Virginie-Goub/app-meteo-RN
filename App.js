@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { View, Text, Image, TouchableOpacity, TextInput } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import style from "./styles/styles";
@@ -14,9 +14,12 @@ function App() {
   {
     /*const [locationData, setLocationData] = useState({}); //Données de localisation*/
   }
-
+  /*EFFET DE BORD USE EFFECT*/
+  useEffect(() => {
+    getDatas();
+  }, []);
   /*
-   * Récupération des données meteo
+   * Récupération des données meteo par la localisation
    */
   async function getDatas() {
     const location = await getPosition();
