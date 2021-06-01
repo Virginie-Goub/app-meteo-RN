@@ -1,10 +1,17 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+  /*BACKGROUND*/
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+  },
   /* Conteneur principal */
   mainContainer: {
     flex: 1,
     paddingTop: 10,
+    backgroundColor: "#B7E9F6",
   },
   /* Conteneur titre */
   titleContainer: {
@@ -62,23 +69,27 @@ const styles = StyleSheet.create({
   },
   /*TEMP ACTUEL & VENT FLEX 2*/
   detailsRowOne: {
-    padding: 30,
+    paddingTop: 30,
     flex: 2,
     flexDirection: "row",
+
     /*justifyContent: "space-around",*/
     /*backgroundColor: "#F2FD02",*/
   },
   /*HUMIDITY & TEMP MIN ET MAX FLEX 2*/
   detailsRowTwo: {
-    padding: 30,
+    paddingTop: 30,
     flex: 2,
     flexDirection: "row",
+
     /* backgroundColor: "#8302FD",*/
   },
   /*TEMP ACTUEL*/
   tempActuel: {
     flex: 1,
     fontSize: 35,
+    textAlign: "center",
+    justifyContent: "center",
 
     /*backgroundColor: "#E3E5CA",*/
     /*justifyContent: "center",
@@ -88,6 +99,8 @@ const styles = StyleSheet.create({
   windActuel: {
     flex: 1,
     fontSize: 35,
+    textAlign: "center",
+    justifyContent: "center",
 
     /* backgroundColor: "#A2EEB1",*/
   },
@@ -97,6 +110,8 @@ const styles = StyleSheet.create({
   humidity: {
     flex: 1,
     fontSize: 35,
+    textAlign: "center",
+    justifyContent: "center",
 
     /*backgroundColor: "#CEA2EE",*/
   },
