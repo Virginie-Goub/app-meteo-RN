@@ -19,7 +19,6 @@ import * as Location from "expo-location";
 /* Composant App */
 function App() {
   const [meteo, setMeteo] = useState({}); //Données meteo
-  const [city, setCity] = useState("");
 
   {
     /*const [locationData, setLocationData] = useState({}); //Données de localisation*/
